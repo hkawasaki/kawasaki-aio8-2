@@ -4,6 +4,16 @@
     <h2>${display_name}</h2>
 % endif
 
+<style type="text/css">
+@media screen and (max-width: 480px)
+{
+  .video-controls{
+    display: none;
+  }
+}
+</style>
+
+
 <div
     id="video_${id}"
     class="video closed"
@@ -64,13 +74,17 @@
           </section>
           <div class="video-player-post"></div>
           <section class="video-controls is-hidden">
-              <div class="slider" title="${_('Video position')}"></div>
+              <!-- <div class="slider" title="${_('Video position')}"></div> -->
               <div>
+                  <!--
                   <ul class="vcr">
                       <li><a class="video_control" href="#" title="${_('Play')}" role="button" aria-disabled="false"></a></li>
                       <li><div class="vidtime">0:00 / 0:00</div></li>
                   </ul>
+                  -->
+
                   <div class="secondary-controls">
+                      <!--
                       <div class="speeds menu-container">
                           <a class="speed-button" href="#" title="${_('Speeds')}" role="button" aria-disabled="false">
                               <span class="label">${_('Speed')}</span>
@@ -84,6 +98,8 @@
                               <div class="volume-slider"></div>
                           </div>
                       </div>
+                      -->                      
+
                       <a href="#" class="add-fullscreen" title="${_('Fill browser')}" role="button" aria-disabled="false">${_('Fill browser')}</a>
                       <a href="#" class="quality-control is-hidden" title="${_('HD off')}" role="button" aria-disabled="false">${_('HD off')}</a>
 

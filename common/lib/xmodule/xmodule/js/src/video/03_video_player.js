@@ -114,7 +114,8 @@ function (HTML5Video, Resizer) {
         state.videoPlayer.stopAtEndTime = true;
 
         state.videoPlayer.playerVars = {
-            controls: 0,
+            controls: 1,
+            autohide: 1,
             wmode: 'transparent',
             rel: 0,
             showinfo: 0,
